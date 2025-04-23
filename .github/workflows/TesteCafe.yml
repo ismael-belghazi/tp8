@@ -11,18 +11,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 🛎️ Checkout repository
+      - name:  Checkout repository
         uses: actions/checkout@v3
 
-      - name: 📦 Setup Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
 
-      - name: 📥 Install dependencies
+      - name: Install dependencies
         run: npm install
 
-      - name: 🚀 Run http-server and TestCafe
+      - name: Run http-server and TestCafe
         run: |
           npx http-server public -p 8080 &
           sleep 2

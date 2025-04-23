@@ -1,0 +1,14 @@
+{
+  "name": "testcafe-login",
+  "version": "1.0.0",
+  "description": "Projet de test login avec TestCafe",
+  "main": "index.js",
+  "scripts": {
+    "test": "concurrently \"http-server public -p 8080\" \"sleep 2 && testcafe chrome tests/*.js\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1",
+    "http-server": "^14.1.1",
+    "testcafe": "^3.4.0"
+  }
+}
